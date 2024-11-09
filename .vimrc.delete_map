@@ -1,0 +1,74 @@
+" 取消原有的 D 映射
+nnoremap D <Nop>
+
+" 基本行操作
+nnoremap <expr> DD '"_dd'
+nnoremap <expr> DR '"_d$'
+nnoremap <expr> D$ '"_d$'
+nnoremap <expr> D0 '"_d0'
+nnoremap <expr> D^ '"_d^'
+
+" 单词操作
+nnoremap <expr> Dw '"_dw'
+nnoremap <expr> De '"_de'
+nnoremap <expr> Db '"_db'
+nnoremap <expr> DW '"_dW'
+nnoremap <expr> DE '"_dE'
+nnoremap <expr> DB '"_dB'
+nnoremap <expr> Daw '"_daw'
+nnoremap <expr> Diw '"_diw'
+
+" 段落和块操作
+nnoremap <expr> Dap '"_dap'
+nnoremap <expr> Dip '"_dip'
+nnoremap <expr> D} '"_d}'
+nnoremap <expr> D{ '"_d{'
+
+" 文本对象操作
+nnoremap <expr> Di" '"_di"'
+nnoremap <expr> Di' '"_di'''
+nnoremap <expr> Di` '"_di`'
+nnoremap <expr> Di( '"_di('
+nnoremap <expr> Di) '"_di)'
+nnoremap <expr> Di[ '"_di['
+nnoremap <expr> Di] '"_di]'
+nnoremap <expr> Di{ '"_di{'
+nnoremap <expr> Di} '"_di}'
+nnoremap <expr> Di< '"_di<'
+nnoremap <expr> Di> '"_di>'
+nnoremap <expr> Dit '"_dit'
+
+nnoremap <expr> Da" '"_da"'
+nnoremap <expr> Da' '"_da'''
+nnoremap <expr> Da` '"_da`'
+nnoremap <expr> Da( '"_da('
+nnoremap <expr> Da) '"_da)'
+nnoremap <expr> Da[ '"_da['
+nnoremap <expr> Da] '"_da]'
+nnoremap <expr> Da{ '"_da{'
+nnoremap <expr> Da} '"_da}'
+nnoremap <expr> Da< '"_da<'
+nnoremap <expr> Da> '"_da>'
+nnoremap <expr> Dat '"_dat'
+
+" 配合移动命令
+nnoremap <expr> Dj '"_dj'
+nnoremap <expr> Dk '"_dk'
+nnoremap <expr> Dh '"_dh'
+nnoremap <expr> Dl '"_dl'
+nnoremap <expr> DG '"_dG'
+nnoremap <expr> Dgg '"_dgg'
+
+" 配合查找命令
+nnoremap <expr> Df '"_d' . 'f' . nr2char(getchar())
+nnoremap <expr> Dt '"_d' . 't' . nr2char(getchar())
+nnoremap <expr> DF '"_d' . 'F' . nr2char(getchar())
+nnoremap <expr> DT '"_d' . 'T' . nr2char(getchar())
+
+" 可视模式下的删除操作
+vnoremap <expr> D '"_d'
+
+" 其他常用操作
+nnoremap <expr> Ds '"_ds'
+nnoremap <expr> Dn '"_dn'
+nnoremap <expr> DN '"_dN'

@@ -1,0 +1,78 @@
+" unremap
+nnoremap r <Nop>
+nnoremap R <Nop>
+
+" 基本行操作
+nnoremap rr "_ddP      " 替换当前行
+nnoremap rR "_d$P      " 替换从光标到行尾
+nnoremap r$ "_d$P      " 同上
+nnoremap r0 "_d0P      " 替换从光标到行首
+nnoremap r^ "_d^P      " 替换从光标到行首非空字符
+
+" 单词操作
+nnoremap rw "_dwP      " 替换到下一个单词开始
+nnoremap re "_deP      " 替换到当前单词结尾
+nnoremap rb "_dbP      " 替换到前一个单词开始
+nnoremap rW "_dWP      " 替换到下一个大单词开始
+nnoremap rE "_dEP      " 替换到当前大单词结尾
+nnoremap rB "_dBP      " 替换到前一个大单词开始
+nnoremap raw "_dawP    " 替换整个单词（包括周围空格）
+nnoremap riw "_diwP    " 替换整个单词（不包括周围空格）
+
+" 段落和块操作
+nnoremap rap "_dapP    " 替换整个段落（包括空行）
+nnoremap rip "_dipP    " 替换整个段落（不包括空行）
+nnoremap r} "_d}P      " 替换到段落结尾
+nnoremap r{ "_d{P      " 替换到段落开头
+
+" 文本对象操作
+nnoremap ri" "_di"P    " 替换双引号中的内容
+nnoremap ri' "_di'P    " 替换单引号中的内容
+nnoremap ri` "_di`P    " 替换反引号中的内容
+nnoremap ri( "_di(P    " 替换小括号中的内容
+nnoremap ri) "_di)P    " 同上
+nnoremap ri[ "_di[P    " 替换方括号中的内容
+nnoremap ri] "_di]P    " 同上
+nnoremap ri{ "_di{P    " 替换花括号中的内容
+nnoremap ri} "_di}P    " 同上
+nnoremap ri< "_di<P    " 替换尖括号中的内容
+nnoremap ri> "_di>P    " 同上
+nnoremap rit "_ditP    " 替换 XML/HTML 标签中的内容
+
+nnoremap ra" "_da"P    " 替换包含双引号的内容
+nnoremap ra' "_da'P    " 替换包含单引号的内容
+nnoremap ra` "_da`P    " 替换包含反引号的内容
+nnoremap ra( "_da(P    " 替换包含小括号的内容
+nnoremap ra) "_da)P    " 同上
+nnoremap ra[ "_da[P    " 替换包含方括号的内容
+nnoremap ra] "_da]P    " 同上
+nnoremap ra{ "_da{P    " 替换包含花括号的内容
+nnoremap ra} "_da}P    " 同上
+nnoremap ra< "_da<P    " 替换包含尖括号的内容
+nnoremap ra> "_da>P    " 同上
+nnoremap rat "_datP    " 替换包含 XML/HTML 标签的内容
+
+" 配合移动命令
+nnoremap rj "_djP      " 替换当前行和下一行
+nnoremap rk "_dkP      " 替换当前行和上一行
+nnoremap rh "_dhP      " 替换光标前一个字符
+nnoremap rl "_dlP      " 替换光标处字符
+nnoremap rG "_dGP      " 替换到文件末尾
+nnoremap rgg "_dggP    " 替换到文件开头
+
+" 配合查找命令
+nnoremap <expr> rf '"_d' . 'f' . nr2char(getchar()) . 'P'
+nnoremap <expr> rt '"_d' . 't' . nr2char(getchar()) . 'P'
+nnoremap <expr> rF '"_d' . 'F' . nr2char(getchar()) . 'P'
+nnoremap <expr> rT '"_d' . 'T' . nr2char(getchar()) . 'P'
+
+" 可视模式下的替换操作
+vnoremap r "_dP        " 在可视模式下替换选中内容
+
+" 替换单个字符的新方法（由于取消了原有的r功能）
+nnoremap rc "_clP      " 替换单个字符(c = character)
+
+" 其他常用操作
+nnoremap rs "_dsP      " 替换一个句子
+nnoremap rn "_dnP      " 替换到下一个搜索结果
+nnoremap rN "_dNP      " 替换到上一个搜索结果
