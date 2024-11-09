@@ -2,73 +2,73 @@
 nnoremap D <Nop>
 
 " 基本行操作
-nnoremap <expr> DD '"_dd'
-nnoremap <expr> DR '"_d$'
-nnoremap <expr> D$ '"_d$'
-nnoremap <expr> D0 '"_d0'
-nnoremap <expr> D^ '"_d^'
+nnoremap DD "_dd
+nnoremap DR "_d$
+nnoremap D$ "_d$
+nnoremap D0 "_d0
+nnoremap D^ "_d^
 
 " 单词操作
-nnoremap <expr> Dw '"_dw'
-nnoremap <expr> De '"_de'
-nnoremap <expr> Db '"_db'
-nnoremap <expr> DW '"_dW'
-nnoremap <expr> DE '"_dE'
-nnoremap <expr> DB '"_dB'
-nnoremap <expr> Daw '"_daw'
-nnoremap <expr> Diw '"_diw'
+nnoremap Dw "_dw
+nnoremap De "_de
+nnoremap Db "_db
+nnoremap DW "_dW
+nnoremap DE "_dE
+nnoremap DB "_dB
+nnoremap Daw "_daw
+nnoremap Diw "_diw
 
 " 段落和块操作
-nnoremap <expr> Dap '"_dap'
-nnoremap <expr> Dip '"_dip'
-nnoremap <expr> D} '"_d}'
-nnoremap <expr> D{ '"_d{'
+nnoremap Dap "_dap
+nnoremap Dip "_dip
+nnoremap D} "_d}
+nnoremap D{ "_d{
 
 " 文本对象操作
-nnoremap <expr> Di" '"_di"'
-nnoremap <expr> Di' '"_di'''
-nnoremap <expr> Di` '"_di`'
-nnoremap <expr> Di( '"_di('
-nnoremap <expr> Di) '"_di)'
-nnoremap <expr> Di[ '"_di['
-nnoremap <expr> Di] '"_di]'
-nnoremap <expr> Di{ '"_di{'
-nnoremap <expr> Di} '"_di}'
-nnoremap <expr> Di< '"_di<'
-nnoremap <expr> Di> '"_di>'
-nnoremap <expr> Dit '"_dit'
+nnoremap Di" "_di"
+nnoremap Di' "_di'
+nnoremap Di` "_di`
+nnoremap Di( "_di(
+nnoremap Di) "_di)
+nnoremap Di[ "_di[
+nnoremap Di] "_di]
+nnoremap Di{ "_di{
+nnoremap Di} "_di}
+nnoremap Di< "_di<
+nnoremap Di> "_di>
+nnoremap Dit "_dit
 
-nnoremap <expr> Da" '"_da"'
-nnoremap <expr> Da' '"_da'''
-nnoremap <expr> Da` '"_da`'
-nnoremap <expr> Da( '"_da('
-nnoremap <expr> Da) '"_da)'
-nnoremap <expr> Da[ '"_da['
-nnoremap <expr> Da] '"_da]'
-nnoremap <expr> Da{ '"_da{'
-nnoremap <expr> Da} '"_da}'
-nnoremap <expr> Da< '"_da<'
-nnoremap <expr> Da> '"_da>'
-nnoremap <expr> Dat '"_dat'
+nnoremap Da" "_da"
+nnoremap Da' "_da'
+nnoremap Da` "_da`
+nnoremap Da( "_da(
+nnoremap Da) "_da)
+nnoremap Da[ "_da[
+nnoremap Da] "_da]
+nnoremap Da{ "_da{
+nnoremap Da} "_da}
+nnoremap Da< "_da<
+nnoremap Da> "_da>
+nnoremap Dat "_dat
 
 " 配合移动命令
-nnoremap <expr> Dj '"_dj'
-nnoremap <expr> Dk '"_dk'
-nnoremap <expr> Dh '"_dh'
-nnoremap <expr> Dl '"_dl'
-nnoremap <expr> DG '"_dG'
-nnoremap <expr> Dgg '"_dgg'
+nnoremap Dj "_dj
+nnoremap Dk "_dk
+nnoremap Dh "_dh
+nnoremap Dl "_dl
+nnoremap DG "_dG
+nnoremap Dgg "_dgg
 
 " 配合查找命令
-nnoremap <expr> Df '"_d' . 'f' . nr2char(getchar())
-nnoremap <expr> Dt '"_d' . 't' . nr2char(getchar())
-nnoremap <expr> DF '"_d' . 'F' . nr2char(getchar())
-nnoremap <expr> DT '"_d' . 'T' . nr2char(getchar())
+nnoremap Df "_df
+nnoremap Dt "_dt
+nnoremap DF "_dF
+nnoremap DT "_dT
 
 " 可视模式下的删除操作
-vnoremap <expr> D '"_d'
+vnoremap D "_d
 
 " 其他常用操作
-nnoremap <expr> Ds '"_ds'
-nnoremap <expr> Dn '"_dn'
-nnoremap <expr> DN '"_dN'
+nnoremap Ds "_ds
+nnoremap Dn "_dn
+nnoremap DN "_dN
