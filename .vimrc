@@ -30,7 +30,7 @@ set smartcase           " 如果搜索包含大写字母，则区分大小写
 " set autoindent        " 自动缩进
 set smartindent       " 智能缩进
 set tabstop=4         " 制表符宽度
-" set shiftwidth=4      " 缩进宽度
+set shiftwidth=4      " 缩进宽度
 
 
 " show
@@ -68,6 +68,7 @@ set selectmode=mouse,key
 
 " leader
 let mapleader = ","
-
+nnoremap <leader>p o<ESC>p
+nnoremap <leader>P O<ESC>P
 
 
