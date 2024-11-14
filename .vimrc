@@ -1,10 +1,10 @@
 
-let s:current_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
-execute 'source ' . s:current_dir . '/.vimrc.replace_map'
-execute 'source ' . s:current_dir . '/.vimrc.delete_map'
-" for vscode vim
-source ~/.vim/.vimrc.replace_map
-source ~/.vim/.vimrc.delete_map
+" let s:current_dir = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+" execute 'source ' . s:current_dir . '/.vimrc.replace_map'
+" execute 'source ' . s:current_dir . '/.vimrc.delete_map'
+" " for vscode vim
+" source ~/.vim/.vimrc.replace_map
+" source ~/.vim/.vimrc.delete_map
 
 " general
 set number
