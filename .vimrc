@@ -9,6 +9,7 @@ set ruler
 set wrap
 set linebreak
 set showmode
+set backspace=indent,eol,start
 
 
 " --------------
