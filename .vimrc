@@ -105,6 +105,7 @@ call plug#begin()
 	Plug 'tpope/vim-repeat'
 	Plug 'tomtom/tcomment_vim'
 	Plug 'mileszs/ack.vim'
+	Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 
