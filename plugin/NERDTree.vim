@@ -1,4 +1,5 @@
 let NERDTreeMinimalUI = 1
+let NERDTreeChDirMode = 2
 
 nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>n :NERDTreeFocus<CR>

@@ -97,7 +97,16 @@ autocmd WinLeave * setlocal nocursorline
 " plugin
 " --------------
 call plug#begin()
-Plug 'preservim/NERDTree'
-Plug 'vim-airline/vim-airline'
-Plug 'ctrlpvim/ctrlp.vim'
+	Plug 'preservim/NERDTree'
+	Plug 'vim-airline/vim-airline'
+	Plug 'ctrlpvim/ctrlp.vim'
+	Plug 'tpope/vim-surround'
+	Plug 'tpope/vim-repeat'
+	Plug 'tomtom/tcomment_vim'
+	Plug 'mileszs/ack.vim'
 call plug#end()
+
+
+" --------------
+" end
+" --------------
