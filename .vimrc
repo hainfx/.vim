@@ -106,6 +106,7 @@ call plug#begin()
 	Plug 'tomtom/tcomment_vim'
 	Plug 'mileszs/ack.vim'
 	Plug 'jiangmiao/auto-pairs'
+	Plug 'vim-scripts/ReplaceWithRegister'
 call plug#end()
 
 
