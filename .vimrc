@@ -43,7 +43,6 @@ set linebreak
 set scrolloff=5
 set laststatus=2
 set cursorline
-syntax enable
 set background=dark
 set termguicolors
 
@@ -65,10 +64,10 @@ set clipboard=unnamed
 " --------------
 " filetype
 " --------------
+syntax on
 filetype on
-filetype indent on
 filetype plugin on
-
+filetype indent on
 
 " --------------
 " mouse
