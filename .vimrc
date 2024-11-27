@@ -117,6 +117,7 @@ call plug#begin()
 	Plug 'mileszs/ack.vim'
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'vim-scripts/ReplaceWithRegister'
+	Plug 'ojroques/vim-oscyank'
 call plug#end()
 
 
