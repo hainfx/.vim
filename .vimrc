@@ -10,8 +10,6 @@ set wrap
 set linebreak
 set showmode
 set backspace=indent,eol,start
-
-
 " --------------
 " scroll
 " --------------
@@ -25,6 +23,7 @@ set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+nnoremap * *N
 
 
 " --------------
@@ -80,11 +79,20 @@ set selectmode=mouse,key
 
 
 " --------------
+" ignore
+" --------------
+noremap <C-f> <Nop>
+noremap <C-b> <Nop>
+
+
+" --------------
 " leader
 " --------------
 let mapleader = ","
-nnoremap <leader>p o<ESC>p
-nnoremap <leader>P O<ESC>P
+nnoremap <leader>p :put<CR>
+nnoremap <leader>P :put!<CR>
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
 
 
 " --------------
