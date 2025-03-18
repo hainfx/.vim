@@ -28,9 +28,9 @@ nnoremap * *N
 
 
 " --------------
-" tab indent 
+" tab indent
 " --------------
-" set autoindent
+set autoindent
 set smartindent
 set tabstop=4
 set shiftwidth=4
@@ -91,11 +91,7 @@ noremap <C-b> <Nop>
 " --------------
 " leader
 " --------------
-let mapleader = ","
-nnoremap <leader>p :put<CR>
-nnoremap <leader>P :put!<CR>
-nnoremap <leader>d "_d
-vnoremap <leader>d "_d
+let mapleader = " "
 
 
 " --------------
@@ -103,6 +99,7 @@ vnoremap <leader>d "_d
 " --------------
 autocmd WinEnter * setlocal cursorline
 autocmd WinLeave * setlocal nocursorline
+autocmd BufWritePre * %s/\s\+$//e
 
 
 " --------------
