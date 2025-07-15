@@ -46,6 +46,7 @@ set laststatus=2
 set cursorline
 set background=dark
 set termguicolors
+set noshowmode
 
 
 " --------------
@@ -84,14 +85,14 @@ set selectmode=mouse,key
 " --------------
 " ignore
 " --------------
-noremap <C-f> <Nop>
-noremap <C-b> <Nop>
+" noremap <C-f> <Nop>
+" noremap <C-b> <Nop>
 
 
 " --------------
 " leader
 " --------------
-let mapleader = " "
+" let mapleader = ""
 
 
 " --------------
@@ -105,18 +106,18 @@ autocmd BufWritePre * %s/\s\+$//e
 " --------------
 " plugin
 " --------------
-call plug#begin()
-	Plug 'preservim/NERDTree'
-	Plug 'vim-airline/vim-airline'
-	Plug 'ctrlpvim/ctrlp.vim'
-	Plug 'tpope/vim-surround'
-	Plug 'tpope/vim-repeat'
-	Plug 'tomtom/tcomment_vim'
-	Plug 'mileszs/ack.vim'
-	Plug 'jiangmiao/auto-pairs'
-	Plug 'vim-scripts/ReplaceWithRegister'
-	Plug 'ojroques/vim-oscyank'
-call plug#end()
+" call plug#begin()
+" 	Plug 'preservim/NERDTree'
+" 	Plug 'vim-airline/vim-airline'
+" 	Plug 'ctrlpvim/ctrlp.vim'
+" 	Plug 'tpope/vim-surround'
+" 	Plug 'tpope/vim-repeat'
+" 	Plug 'tomtom/tcomment_vim'
+" 	Plug 'mileszs/ack.vim'
+" 	Plug 'jiangmiao/auto-pairs'
+" 	Plug 'vim-scripts/ReplaceWithRegister'
+" 	Plug 'ojroques/vim-oscyank'
+" call plug#end()
 
 
 " --------------
