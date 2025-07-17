@@ -12,6 +12,19 @@ set backspace=indent,eol,start
 
 
 " --------------
+" modify
+" --------------
+nnoremap cc ^c$
+
+
+" --------------
+" window
+" --------------
+nnoremap <C-w>\| <C-w>v
+nnoremap <C-w>- <C-w>s
+
+
+" --------------
 " scroll
 " --------------
 set scrolloff=3
