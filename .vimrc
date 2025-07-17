@@ -6,10 +6,11 @@ set noswapfile
 set cursorline
 set nocompatible
 set ruler
-set wrap
 set linebreak
 set showmode
 set backspace=indent,eol,start
+
+
 " --------------
 " scroll
 " --------------
@@ -25,6 +26,7 @@ set ignorecase
 set smartcase
 set nomagic
 nnoremap * *N
+vnoremap * y/\V<C-R>=substitute(substitute(trim(@0), '\\', '\\\\', 'g'), '\n', '\\n', 'g')<CR><CR>
 
 
 " --------------
@@ -73,6 +75,7 @@ filetype indent on
 set termguicolors
 let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
 let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 
 " --------------
 " mouse
