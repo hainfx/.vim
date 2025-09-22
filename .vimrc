@@ -40,6 +40,9 @@ set smartcase
 set nomagic
 nnoremap * *N
 vnoremap * y/\V<C-R>=substitute(substitute(trim(@0), '\\', '\\\\', 'g'), '\n', '\\n', 'g')<CR><CR>
+nnoremap ' `
+nnoremap ` '
+nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 
 " --------------
