@@ -111,7 +111,9 @@ set selectmode=mouse,key
 " --------------
 " leader
 " --------------
-" let mapleader = ""
+let mapleader = ","
+nnoremap <leader>d "_d
+vnoremap <leader>d "_d
 
 
 " --------------
