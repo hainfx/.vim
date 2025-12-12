@@ -28,6 +28,9 @@ nnoremap <C-w>- <C-w>s
 " scroll
 " --------------
 set scrolloff=3
+nnoremap <C-d> 7<C-e>
+nnoremap <C-u> 7<C-y>
+" set scroll=5
 
 
 " --------------
@@ -42,6 +45,9 @@ nnoremap * *N
 vnoremap * y/\V<C-R>=substitute(substitute(trim(@0), '\\', '\\\\', 'g'), '\n', '\\n', 'g')<CR><CR>
 nnoremap ' `
 nnoremap ` '
+nnoremap 'a `azz
+nnoremap 'b `bzz
+nnoremap <expr> ' "`".nr2char(getchar()).'zz'
 nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 
 
@@ -50,8 +56,8 @@ nnoremap <silent> <C-l> :<C-u>nohlsearch<CR><C-l>
 " --------------
 set autoindent
 set smartindent
-set tabstop=4
-set shiftwidth=4
+set tabstop=2
+set shiftwidth=2
 
 
 " --------------
@@ -111,9 +117,13 @@ set selectmode=mouse,key
 " --------------
 " leader
 " --------------
-let mapleader = ","
+let mapleader = " "
 nnoremap <leader>d "_d
-vnoremap <leader>d "_d
+xnoremap <leader>d "_d
+nnoremap <leader>c "_c
+xnoremap <leader>c "_c
+nnoremap <leader>x "_x
+xnoremap <leader>x "_x
 
 
 " --------------
